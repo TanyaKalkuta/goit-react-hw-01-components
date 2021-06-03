@@ -18,7 +18,7 @@ const Profile = ({ avatar, name, tag, location, stats: { followers, views, likes
     <ul class="stats">
       <li>
         <span class="label">Followers</span>
-        <span class="quantity">{ followers }</span>
+        <span class="quantity">{followers}</span>
       </li>
       <li>
         <span class="label">Views</span>
@@ -33,7 +33,7 @@ const Profile = ({ avatar, name, tag, location, stats: { followers, views, likes
 );
 
 Profile.defaultProps = {
-    url: "https://st.depositphotos.com/1781556/1326/i/600/depositphotos_13267901-stock-photo-cloud-icon-with-loading-text.jpg",
+    avatar: "https://st.depositphotos.com/1781556/1326/i/600/depositphotos_13267901-stock-photo-cloud-icon-with-loading-text.jpg",
 }
 
 Profile.propTypes = {

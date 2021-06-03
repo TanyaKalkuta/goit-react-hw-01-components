@@ -11,8 +11,7 @@ const FriendList = ({ friends }) => (
             </li>
         ))}
   </ul>
-
-    
+ 
     
 )
 
