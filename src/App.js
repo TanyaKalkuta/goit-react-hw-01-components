@@ -7,6 +7,8 @@ import friends from './json/friends.json';
 import FriendList from './Component/FriendList/FriendList';
 import transactions from './json/transactions.json';
 import TransactionHistory from './Component/TransactionHistory/TransactionHistory';
+import Panel from './Component/Panel/Panel';
+import Container from './Component/Container/Container';
 
 console.log(users);
 console.log(statisticalData);
@@ -14,28 +16,37 @@ console.log(transactions);
 
 const App = () => {
   return (
-      <div>
-          <Profile
+    <Container>
+      <Panel>
+        <Profile
           avatar={users.avatar}
           name={users.name}
           tag= {users.tag}
           location={users.location}
           stats={users.stats}          
-          />
-
-          <Statistics 
+      />
+      </Panel>
+          
+      <Panel>
+         <Statistics 
           title="Upload stats"
           stats={ statisticalData }
           />
+      </Panel>
 
-          <FriendList
-          friends={friends}
-          />
-
-          <TransactionHistory
+         
+      <Panel>
+        <FriendList
+          friends={friends} />
+      </Panel>
+         
+      <Panel>
+        <TransactionHistory
           items={transactions}
           />
-      </div>
+      </Panel>
+          
+      </Container>
       
   );
 };

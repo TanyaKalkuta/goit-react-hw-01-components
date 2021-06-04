@@ -5,4 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
