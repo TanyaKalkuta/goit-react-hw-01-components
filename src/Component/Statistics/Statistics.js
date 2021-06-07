@@ -14,7 +14,7 @@ const Statistics = ( {title, stats} ) => (
             {stats.map(({ id, label, percentage }) => (
                 <li key={id} className={styles.item}
                      style={{ backgroundColor: "#" + Math.floor(Math.random() * 16777215).toString(16) }}>
-                    <span className={styles.label}>.{label}</span>
+                    <span className={styles.label}>{label}</span>
                     <span className={styles.percentage}>{percentage}%</span>
                 </li>
             ))}
