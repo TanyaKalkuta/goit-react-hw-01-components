@@ -11,10 +11,10 @@ const Panel = ({ children }) => (
 
 Panel.defaultProps = {
     children: [],
-}
+};
 
 Panel.propTypes = {
     children: PropTypes.node,
-}
+};
 
 export default Panel 
